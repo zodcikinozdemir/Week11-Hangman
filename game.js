@@ -1,7 +1,7 @@
 var Word = require("./word.js");
 
 exports.game = function () {
-	wordBank: ['lindt', 'hersheys', 'ghirardelli', 'mars', 'milkyway', 'toblerone',  'almondjoy', 'reeses', 'snickers', 'kitkat', 'twix'];
+	wordBank: ['lindt', 'dove', 'godiva', 'hersheys', 'ghirardelli', 'mars', 'milkyway', 'toblerone',  'almondjoy', 'reeses', 'snickers', 'kitkat', 'twix'];
 	wordsWon : 0,//  
 	guessesRemaining : 10, 
 	currentWrd : null, 

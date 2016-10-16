@@ -1,0 +1,22 @@
+{
+  "name": "hangmangame",
+  "version": "1.0.0",
+  "description": "Chocalate Hangman Game",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zodcikinozdemir/Week11-Hangman.git"
+  },
+  "author": "Zeynep Odcikin-Ozdemir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zodcikinozdemir/Week11-Hangman/issues"
+  },
+  "homepage": "https://github.com/zodcikinozdemir/Week11-Hangman#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
