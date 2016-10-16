@@ -1,5 +1,5 @@
 // require your letter objects
-var letter = require('Letter');
+var Letter = require('./letter.js');
 
 var Word = function(wrd){
 	this.target = wrd;
@@ -9,7 +9,7 @@ var Word = function(wrd){
 
 	this.getLets = function() {
 		for (var i=0; i < this.target.length; i++) {
-			this.letters.push( new letter(this.target[i]));
+			this.letters.push( new Letter(this.target[i]));
 		}
 	};
 	
@@ -23,8 +23,8 @@ var Word = function(wrd){
 	this.checkIfLetterFound = function(guessLetter) {
 		var whatToReturn = 0;
 		for (var i = 0; i < this.letters.length; i++) {
-			if (this.lets[i].charac == guessLet){
-				this.lets[i].appear = guessLetter;
+			if (this.letters[i].character == guessLetter){
+				this.letters[i].appear = guessLetter;
 				whatToReturn++;
 			}
 		}
@@ -40,4 +40,4 @@ var Word = function(wrd){
 	};
 }
 
-exports.Word = Word;
+module.exports = Word;

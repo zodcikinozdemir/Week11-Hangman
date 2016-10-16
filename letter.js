@@ -6,4 +6,4 @@ var Letter = function(let) {
 	};
 };
 
-exports.Letter = Letter;
+module.exports = Letter;

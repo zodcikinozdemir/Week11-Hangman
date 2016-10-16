@@ -1,4 +1,4 @@
-var word = require('./game.js');
+var game = require('./game.js');
 var prompt = require('prompt');
 
 console.log("Welcome to Chocolate Hangman!");
