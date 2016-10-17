@@ -10,8 +10,8 @@ var game = {
 	startGame : function (wrd) {
 		this.resetGuessesRemaining();
  		this.currentWrd = new Word(this.wordBank[Math.floor(Math.random()* this.wordBank.length)]);
- 		this.currentWrd.getLets();
- 		console.log("["+this.currentWrd.wordRender()+"]");
+ 		this.currentWrd.getLetters();
+ 		console.log("Word : ["+this.currentWrd.wordRender()+"]");
 		this.keepPromptingUser();
 	}, 
 	resetGuessesRemaining : function() {
@@ -22,8 +22,7 @@ var game = {
 
 		prompt.get(['guessLetter'], function(err, result) {
 		    var manyGuessed = self.currentWrd.checkIfLetterFound(result.guessLetter);
-            console.log("Word : ["+self.currentWrd.wordRender()+"]");
- 			if(manyGuessed ==0) {
+            if(manyGuessed ==0) {
  				console.log("WRONG\n");
  				self.guessesRemaining--;
  			} else {
@@ -35,6 +34,8 @@ var game = {
  						return;
  					}
  			}
+ 			console.log("Word : ["+self.currentWrd.wordRender()+"]");
+ 			
  			console.log("\nGuesses remaining: " + self.guessesRemaining);
  			console.log("----------------------");
  			if((self.guessesRemaining > 0) && (self.currentWrd.found == false)){

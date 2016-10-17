@@ -7,7 +7,7 @@ var Word = function(wrd){
 	this.found = false;
 
 
-	this.getLets = function() {
+	this.getLetters = function() {
 		for (var i=0; i < this.target.length; i++) {
 			this.letters.push( new Letter(this.target[i]));
 		}
